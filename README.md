@@ -3,7 +3,7 @@
 
 The lockfree implementation was taken from code from ["Multiprocessor Synchronization and Concurrent Data Structures" 2007](https://booksite.elsevier.com/9780123705914/?ISBN=9780123705914)
 
-Here when we do a bench,mark we see that even with thread (10 concurrent) contention on a benchmark
+Here when we do a benchmark we see that even with thread (10 concurrent) contention on a benchmark
 the reentrant version is far superior to the lockfree one. 
 
 Perhaps the implementation needs improving but it shows that Benchmarking is always important
