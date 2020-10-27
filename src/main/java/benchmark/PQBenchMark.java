@@ -23,6 +23,12 @@ import org.openjdk.jmh.runner.options.OptionsBuilder;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
+//Benchmark                        (num_adds)  Mode  Cnt   Score   Error  Units
+//PQBenchMark.concurrentAdds            10000  avgt    2   1.235          ms/op
+//PQBenchMark.concurrentRemoveMin       10000  avgt    2   6.161          ms/op
+//PQBenchMark.lockFreeAdds              10000  avgt    2  22.318          ms/op
+//PQBenchMark.lockFreeRemoveMin         10000  avgt    2  39.626          ms/op
+
 @BenchmarkMode(Mode.AverageTime)
 @OutputTimeUnit(TimeUnit.MILLISECONDS)
 @State(Scope.Benchmark)
